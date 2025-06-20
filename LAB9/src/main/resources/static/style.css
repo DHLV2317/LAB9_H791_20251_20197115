@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background: #e0f7fa;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #00796b;
+}
+
+.buttons {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #80cbc4;
+    cursor: not-allowed;
+}
+
+#piensos-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+#piensos-container img {
+    width: 40px;
+    margin: 5px;
+    cursor: grab;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    margin: 0 auto;
+    border: 3px solid #00695c;
+    background-color: #b2dfdb;
+}
+
+.cell {
+    border: 1px solid #ccc;
+    background-color: white;
+    position: relative;
+}
+
+.cell img.pienso-en-tablero {
+    width: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    pointer-events: none;
+}
+
+.gotin {
+    width: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.flecha {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    top: 0;
+    left: 30px;
+    pointer-events: none;
+}
+
+#estadoJuego {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #004d40;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Angry Patos - Gotín</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .flecha-img {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                pointer-events: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Angry Patos</h1>
+
+        <div class="buttons">
+            <button id="generarPiensos">Generar piensos</button>
+            <button id="colocarGotin" disabled>Colocar a Gotín</button>
+        </div>
+
+        <div id="piensos-container"></div>
+
+        <div id="tablero" class="grid"></div>
+
+        <p id="estadoJuego"></p>
+
+        <!-- ✅ Mantén solo esto -->
+        <script src="script.js"></script>
+    </body>
+</html>
